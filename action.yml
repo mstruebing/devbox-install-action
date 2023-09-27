@@ -120,6 +120,8 @@ runs:
       with:
         logger: pretty
         extra-conf: experimental-features = ca-derivations fetch-closure
+        planner: linux-multi
+        init: none
 
     - name: Mount nix store cache
       if: inputs.enable-cache == 'true'
